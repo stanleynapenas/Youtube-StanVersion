@@ -1,0 +1,102 @@
+/* Header */
+body{
+    background-color: #f9f9f9;
+    font-family: 'Gothic A1', arial, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.brand-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.selected-div{
+    margin-right: 20px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.selected-div:hover{
+    background-color: #e7e7e7;
+    border-radius: 50%;
+}
+
+.icons{
+    width: 25px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.search-term{
+    padding: 5px;
+    height: 35px;
+    width: 500px;
+    border-top: 1px solid #cccccc;
+    border-right: none;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.search-button{
+    padding: 5px;
+    height: 35px;
+    width: 70px;
+    background-color: #f0f1f0;
+    border: 1px solid #cccccc;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.search-icon{
+    width: 15px;
+}
+
+.profile-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.video-icon{
+    width: 30px;
+}
+
+.notification-icon{
+    height: 20px;
+}
+
+.profile-div{
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.profile{
+    height: 30px;
+}
