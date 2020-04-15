@@ -157,6 +157,18 @@ body{
     background-color: white;
 }
 
+@media screen and (max-width: 991px) {
+    .channel {
+        width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .channel {
+        width: 20%;
+    }
+  }
+
 .first-section-channel{
     border-bottom: 2px solid #f0f1f0;
     padding-bottom: 10px;
@@ -230,6 +242,19 @@ body{
     height: calc(100vh - 70px);
     overflow: scroll;
 }
+
+@media screen and (max-width: 991px) {
+    .video-section {
+        width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .video-section {
+        width: 80%;
+    }
+  }
+
 
 .suggestions{
     color: #222222;
