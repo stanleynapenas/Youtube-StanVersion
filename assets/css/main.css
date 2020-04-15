@@ -2,6 +2,9 @@
 body{
     background-color: #f9f9f9;
     font-family: 'Gothic A1', arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .navbar{
@@ -16,6 +19,15 @@ body{
     height: 70px;
     background-color: white;
 }
+
+@media screen and (max-width: 767px) {
+
+    .navbar{
+        padding-left: 0;
+    }
+    
+    }
+
 
 .brand-nav{
     display: flex;
@@ -37,6 +49,14 @@ body{
 .icons{
     width: 25px;
 }
+@media screen and (max-width: 767px) {
+
+    .disapear{
+        display: none;
+    }
+    
+    }
+
 
 .logo{
     width: 100px;
@@ -61,6 +81,24 @@ body{
     border-bottom-left-radius: 2px;
 }
 
+@media screen and (max-width: 991px) {
+    .search-term {
+        width: 400px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .search-term {
+        width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .search-term {
+        width: 50px;
+    }
+  }
+
 .search-button{
     padding: 5px;
     height: 35px;
@@ -81,6 +119,14 @@ body{
     align-items: center;
     justify-content: flex-end;
 }
+
+@media screen and (max-width: 767px) {
+
+    .profile-icons{
+        display: none;
+    }
+    
+    }
 
 .video-icon{
     width: 30px;
@@ -144,11 +190,26 @@ body{
     margin-bottom: 1px;
 }
 
+
+  @media screen and (max-width: 767px) {
+    .titles-channel {
+        display: none;
+    }
+  }
+  
+
 .section-title{
     text-transform: uppercase;
     color: #606060;
     margin-left: 30px;
 }
+
+@media screen and (max-width: 767px) {
+    .section-title {
+        display: none;
+    }
+  }
+
 
 .channel-img{
     width: 30px;
@@ -156,3 +217,102 @@ body{
 }
 
 /* Video Section */
+.no-margin-padding{
+    padding: 0;
+    margin: 0;
+}
+
+.video-section{
+    margin-top: 70px;
+    margin-left: 50px;
+    padding-top: 20px;
+    width: 80%;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+}
+
+.suggestions{
+    color: #222222;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.video-div{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-bottom: 40px;
+}
+
+.video-hover{
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    width: 98%;
+    background-color: #f0f1f0;
+}
+
+.jordan{
+    background: url(../img/jordan-win.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.kobe{
+    background: url(../img/kobe-win.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lebron{
+    background: url(../img/lebron-win.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#myVideo {
+    opacity: 0%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    transition: 1s ease-in-out;
+  }
+
+  #myVideo:hover {
+    opacity: 100%;
+  }
+
+  .text-container{
+      width: 100%;
+  }
+
+  .title-video{
+    color: #222222;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.channel-name{
+    color: #606060;
+    margin-left: 65px;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.bottom-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
